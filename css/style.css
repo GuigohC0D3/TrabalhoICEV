@@ -65,3 +65,16 @@ form button {
 .hidden {
     display: none;
 }
+
+.post {
+    /* existing styles */
+    cursor: pointer; /* Add this to make the div look clickable */
+    color: black;
+  }
+  
+  .post a {
+    display: block; /* Make the anchor tag fill the entire div */
+    width: 100%;
+    height: 100%;
+    color: black;
+  }
