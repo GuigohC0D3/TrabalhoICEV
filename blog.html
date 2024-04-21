@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <style>
+        /* Style the navigation bar */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style the images */
+        img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        /* Style the audio and video players */
+        audio, video {
+            width: 400px;
+            height: 300px;
+            margin: 10px;
+        }
+
+        /* Style the CSS classes and IDs */
+        .my-class {
+            color: red;
+            font-size: 20px;
+        }
+
+        #my-id {
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        /* Style the form */
+        form {
+            margin: 10px;
+        }
+
+        label {
+            display: block;
+            margin: 10px;
+        }
+
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Style the header, section, and footer */
+        header, section, footer {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <a href="page1.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+        <a href="page4.html">Page 4</a>
+        <a href="page5.html">Page 5</a>
+        <a href="page6.html">Page 6</a>
+        <a href="page7.html">Page 7</a>
+        <a href="page8.html">Page 8</a>
+    </nav>
+
+    <!-- Images -->
+    <img src="img/Panda.jpeg" alt="Panda">
+    <img src="img/Urso do sol.jpeg" alt="Urso do Sol">
+    <img src="img/Usro pardo.jpeg" alt="Urso Pardo">
+
+    <!-- Audio -->
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Video -->
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <!-- CSS classes and IDs -->
+    <p class="my-class" id="my-id">This is a paragraph with a class and an ID.</p>
+
+    <!-- Form -->
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Header, section, and footer -->
+    <header>
+        <h1>My Web Page</h1>
+    </header>
+    <section>
+        <h2>Section 1</h2>
+        <p>This is a paragraph in section 1.</p>
+    </section>
+    <footer>
+        <p>Copyright © 2023</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Example of using the DOM to change the content of a paragraph
+        var p = document.getElementById("my-id");
+        p.innerHTML = "This is a new paragraph text.";
+
+        // Example of using the DOM to add an event listener to a button
