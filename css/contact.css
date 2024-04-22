@@ -41,3 +41,8 @@ li {
     display: flex;
     justify-content: center;
 }
+
+#audio {
+    display: flex;
+    justify-content: center;
+}
