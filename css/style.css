@@ -178,7 +178,9 @@ form button {
     color: black;
   }
 
-  #posts {
+  .post {
     transition: 35s;
     cursor: pointer;
+    box-shadow: 10px 7px 20px greenyellow;
+    flex-wrap: wrap;
   }
