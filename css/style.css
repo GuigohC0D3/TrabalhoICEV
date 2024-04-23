@@ -165,15 +165,14 @@ form button {
 }
 
 .post:hover > :not(:hover) {
-    /* existing styles */
-    cursor: pointer; /* Add this to make the div look clickable */
+    cursor: pointer; 
     color: black;
     opacity: .4;
     transform: scale(0.9);
   }
   
   .post a {
-    display: block; /* Make the anchor tag fill the entire div */
+    display: block;
     width: 100%;
     height: 100%;
     color: black;
