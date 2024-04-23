@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Contato</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #4caf50, #2e8b57);
+        color: #fff;
+      }
+      .container {
+        width: 50%;
+        margin: 100px auto;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea,
+      input[type="file"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.8);
+      }
+      input[type="submit"] {
+        background: #fff;
+        color: #4caf50;
+        border: none;
+        padding: 15px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      input[type="submit"]:hover {
+        background: #2e8b57;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>
+        Viu uma nova espécie de urso andando por aí? Nos envie uma foto e uma
+        descrição!
+      </h2>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+        <label for="foto">Enviar Foto:</label>
+        <input type="file" id="foto" name="foto" />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>
