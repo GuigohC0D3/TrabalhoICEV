@@ -14,6 +14,12 @@ header {
 
 a {
     text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(128, 128, 136);
 }
 
 #container-header {
@@ -35,8 +41,6 @@ nav ul {
 }
 
 nav ul li a {
-    color: black;
-    font-weight: bold;
     padding: 10px 15px;
     transition: 0.3s ease-in-out;
 }
@@ -45,4 +49,57 @@ nav ul li a:hover {
     color: white;
     background-color: black;
     border-radius: 5px;
+}
+
+#container-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blueviolet;
+    height: 500px;
+    width: 400px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.post a {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 30%;
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+
+.post a:hover {
+    transform: translateY(-1px);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ursos-imagens img {
+    height: 350px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.nomes-ursos h3 {
+    font-style: italic;
+}
+
+#footer-container {
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
